@@ -21,7 +21,7 @@ fn app(cx: Scope) -> Element {
             background: "orange",
             direction: "vertical",
             display: "center",
-            onmousedown: move |_| times += 1,
+            onclick: move |_| times += 1,
             label {
                 width: "100%",
                 font_size: "50",
