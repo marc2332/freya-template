@@ -18,7 +18,7 @@ fn app(cx: Scope) -> Element {
         rect {
             width: "100%",
             height: "100%",
-            background: "orange",
+            background: "rgb(0, 109, 119)",
             direction: "vertical",
             display: "center",
             onclick: move |_| times += 1,

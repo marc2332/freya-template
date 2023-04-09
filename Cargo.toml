@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 dioxus = { git = "https://github.com/DioxusLabs/dioxus", rev="49c5a5043a16fc82210af146c345793dd448e519", features = ["macro", "hooks"]}
-freya = { git="https://github.com/marc2332/freya", rev="39cbddb004c6ed562d84a26342e36cfbffa85845" }
+freya = { git="https://github.com/marc2332/freya", rev="799d54e33abeb94a8e4be0c095ff2deee33591a9" }
