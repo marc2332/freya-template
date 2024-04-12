@@ -4,5 +4,5 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-freya = "0.1"
-dioxus = { version = "0.4", features = ["macro", "hooks"] }
+freya = { git = "https://github.com/marc2332/freya" }
+dioxus = { version = "0.5", default-features = false, features = ["macro", "hooks"] }

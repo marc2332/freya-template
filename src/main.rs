@@ -9,23 +9,23 @@ fn main() {
     launch(app);
 }
 
-fn app(cx: Scope) -> Element {
-    let mut times = use_state(cx, || 1);
+fn app() -> Element {
+    let mut times = use_signal(|| 1);
 
-    let exclamations = "!".repeat(*times.get());
+    let exclamations = "!".repeat(times());
 
-    render!(
+    rsx!(
         rect {
             width: "100%",
             height: "100%",
-            background: "rgb(0, 109, 119)",
-            direction: "vertical",
-            display: "center",
+            background: "rgb(57, 138, 215)",
+            main_align: "center",
+            cross_align: "center",
             onclick: move |_| times += 1,
             label {
                 width: "100%",
                 font_size: "50",
-                align: "center",
+                text_align: "center",
                 color: "white",
                 "Hello, World{exclamations}"
             }
