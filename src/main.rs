@@ -10,9 +10,9 @@ fn main() {
 }
 
 fn app() -> Element {
-    let mut times = use_signal(|| 1);
+    let mut repeats = use_signal(|| 1);
 
-    let exclamations = "!".repeat(times());
+    let exclamations = "!".repeat(repeats());
 
     rsx!(
         rect {
@@ -21,7 +21,7 @@ fn app() -> Element {
             background: "rgb(57, 138, 215)",
             main_align: "center",
             cross_align: "center",
-            onclick: move |_| times += 1,
+            onclick: move |_| repeats += 1,
             label {
                 width: "100%",
                 font_size: "50",
